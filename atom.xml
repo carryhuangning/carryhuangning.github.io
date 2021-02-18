@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-18T04:20:24.871Z</updated>
+  <updated>2021-02-18T14:48:07.119Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,17 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>基于github Pages+Hexo搭建个人博客--搭建环境的准备</title>
+    <link href="http://example.com/2021/02/18/Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87/"/>
+    <id>http://example.com/2021/02/18/Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87/</id>
+    <published>2021-02-18T13:34:27.000Z</published>
+    <updated>2021-02-18T14:48:07.119Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>上期我们详细介绍了什么是个人博客，接下来，我将会专门讲述如何利用githubpages+hexo简单地搭建我们的个人博客，希望这一系列文章可以给希望拥有个人博客的你提供建议。</p><a id="more"></a><p>在正式开始之前，我们首先需要搭建环境的准备工作：</p><p>git环境</p><p>node.js环境</p><p>Github账户的注册及相关设置</p><h1 id="一、安装git"><a href="#一、安装git" class="headerlink" title="一、安装git"></a>一、安装git</h1><p>接下来，小编会以<strong>git version 2.30.1.windows.1</strong>为例，向大家介绍如何安装git</p><p>git官网下载地址：<a href="https://git-scm.com/">https://git-scm.com/</a></p><p>需要注意的是，安装路径最好不要默认在C盘，除非你的C盘足够strong；在安装过程中，直接点击下一步即可；最后，安装成功后，右键任意空白处点击git bash here，在命令行中输入git –version,回车查看你的版本号以判断你是否安装成功。<img src="/2021/02/18/Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87/Blog\source\_posts\Pages-Hexo搭建个人博客-搭建环境的准备\屏幕截图 2021-02-18 215816.png" style="zoom:60%;"></p><h1 id="二、安装node-js"><a href="#二、安装node-js" class="headerlink" title="二、安装node.js"></a>二、安装node.js</h1><p>以node.js14.15.5版本为例，进入node.js官网下载：<a href="https://nodejs.org/zh-cn/[](https://nodejs.org/zh-cn/)">https://nodejs.org/zh-cn/[](https://nodejs.org/zh-cn/)</a></p><p>同样注意不要装在C盘，安装过程一路点击”NEXT”即可，最后，在git bash命令行中输入node -v即可查看node.js版本号。<img src="/2021/02/18/Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87/Blog\source\_posts\Pages-Hexo搭建个人博客-搭建环境的准备\屏幕截图 2021-02-18 220452.png" style="zoom:60%;"></p><h1 id="三、注册Github账号并creat-“new-repository”"><a href="#三、注册Github账号并creat-“new-repository”" class="headerlink" title="三、注册Github账号并creat “new repository”"></a>三、注册Github账号并creat “new repository”</h1><p>进入<!--Github-->官网<a href="https://github.com/">https://github.com/</a>注册一个账号<br>注册账号需要你的Username（用户名）、Email address(邮箱）、Password(密码)<br>注册好之后你会进入你的主页面，点击右上角头像旁New repository即可创建你的新仓库来存放你的代码，为了获得Github的pages，仓库名称一定要命名为**(your username).github.io** 例如我的username是carryhuangning,命名carryhuangning.github.io，至于Add a README file最好勾选以便添加介绍性文本来介绍你的仓库。</p><img src="/2021/02/18/Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87/Blog\source\_posts\Pages-Hexo搭建个人博客-搭建环境的准备\屏幕截图 2021-02-18 221710.png" alt="屏幕截图 2021-02-18 221710" style="zoom:80%;"><img src="/2021/02/18/Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87/Blog\source\_posts\Pages-Hexo搭建个人博客-搭建环境的准备\屏幕截图 2021-02-18 222036.png" alt="屏幕截图 2021-02-18 222036" style="zoom:60%;"><p>随后进入你的仓库页面<img src="/2021/02/18/Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87/Blog\source\_posts\Pages-Hexo搭建个人博客-搭建环境的准备\屏幕截图 2021-02-18 223421.png" alt="屏幕截图 2021-02-18 223421" style="zoom:60%;"></p><p>点击Settings,x下拉找到Github pages,这是Github自动为你生成的网页，点击Launch automatic page generator<img src="/2021/02/18/Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87/Blog\source\_posts\Pages-Hexo搭建个人博客-搭建环境的准备\微信图片_20210218223913.png" alt="微信图片_20210218223913" style="zoom:80%;"></p><p>choose一个你喜欢的主题，这样子就生成一个简单的网页了<img src="/2021/02/18/Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87/Blog\source\_posts\Pages-Hexo搭建个人博客-搭建环境的准备\微信图片_20210218223913.jpg" alt="微信图片_20210218223913" style="zoom:67%;"></p><p>以上步骤做完，在网页地址栏输入<strong>（your username).github.io</strong>即可访问你刚刚创建的网页了，不过，我们的博客并不是发布在这里的，使用Github是为了方便本地、云端数据同步以及域名解析等后期工作的方便，此外，我们还相当于白嫖一台国外的服务器，对于经济尚未独立的我们，这何尝不是一种好办法。</p><p>夜已深，今天的文章就到这里，下一篇我将会从hexo 开始，继续向大家展示如何利用GitHub pages+hexo搭建博客。多谢大家的支持，<strong>晚安，祝好梦！</strong></p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;上期我们详细介绍了什么是个人博客，接下来，我将会专门讲述如何利用githubpages+hexo简单地搭建我们的个人博客，希望这一系列文章可以给希望拥有个人博客的你提供建议。&lt;/p&gt;&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+    <category term="GitHub hexo" scheme="http://example.com/tags/GitHub-hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>什么是个人博客？</title>
     <link href="http://example.com/2021/02/18/%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%9F/"/>
     <id>http://example.com/2021/02/18/%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%9F/</id>
     <published>2021-02-18T03:50:35.000Z</published>
     <updated>2021-02-18T04:20:24.871Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>博客最初名为Weblog，由web+blog合成，字面解释为“网络日记”；后来便产生了blog这个词语，音译作“博客”，亦有音译作“部落格”。</p><a id="more"></a><p>博客一般是指<strong>网络日志</strong>，是一种个人传播自己思想，带有知识集合链接的出版方式。博客是一个网页，通常由简短且经常更新的帖子（Post)构成，这些帖子一般按照年份和日期倒序排列。至于博客的内容，它纯粹是你的个人想法、心得，然而，<strong>它绝不仅仅是纯粹的个人思想的表达以及日常琐事的记录，它所提供的内容可以包容整个互联网，具有极高的共享精神和价值。</strong>Blog就像h是对网络传达的实时讯息。撰写这些Blog的人就叫做Blogger。</p><p>简言之，Blog就是以网络作为载体，简易迅速便捷地发布自己的心得，及时有效轻松地与他人进行交流，再集丰富多彩的个性化展示于一体的综合性平台。 不同的博客可能使用不同的编码，所以相互之间也不一定兼容。这使得不同的博客各具特色。　Blog是继Email、BBS、ICQ之后出现的第四种网络交流方式，是网络时代的个人“读者文摘”，是以超级链接为武器的网络日记，是代表着新的生活方式和新的工作方式，更代表着新的学习方式。具体说来，博客(Blogger)这个概念解释为使用特定的软件，在网络上出版、发表和张贴个人文章的人。</p><p>而在本博客中，笔者将会向大家分享我在各种学习中遇到的问题，并希望我的分享可以帮助你解决问题或者为您的问题带来新思路，希望借助Blog这个平台，我可以和大家一起共同进步！</p><img src="D:\Blog\source\_posts\什么是个人博客？\比心.jpg" alt="❤" style="zoom:67%;" /></blockquote>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>博客最初名为Weblog，由web+blog合成，字面解释为“网络日记”；后来便产生了blog这个词语，音译作“博客”，亦有音译作“部落格”。</p><a id="more"></a><p>博客一般是指<strong>网络日志</strong>，是一种个人传播自己思想，带有知识集合链接的出版方式。博客是一个网页，通常由简短且经常更新的帖子（Post)构成，这些帖子一般按照年份和日期倒序排列。至于博客的内容，它纯粹是你的个人想法、心得，然而，<strong>它绝不仅仅是纯粹的个人思想的表达以及日常琐事的记录，它所提供的内容可以包容整个互联网，具有极高的共享精神和价值。</strong>Blog就像h是对网络传达的实时讯息。撰写这些Blog的人就叫做Blogger。</p><p>简言之，Blog就是以网络作为载体，简易迅速便捷地发布自己的心得，及时有效轻松地与他人进行交流，再集丰富多彩的个性化展示于一体的综合性平台。 不同的博客可能使用不同的编码，所以相互之间也不一定兼容。这使得不同的博客各具特色。　Blog是继Email、BBS、ICQ之后出现的第四种网络交流方式，是网络时代的个人“读者文摘”，是以超级链接为武器的网络日记，是代表着新的生活方式和新的工作方式，更代表着新的学习方式。具体说来，博客(Blogger)这个概念解释为使用特定的软件，在网络上出版、发表和张贴个人文章的人。</p><p>而在本博客中，笔者将会向大家分享我在各种学习中遇到的问题，并希望我的分享可以帮助你解决问题或者为您的问题带来新思路，希望借助Blog这个平台，我可以和大家一起共同进步！</p><img src="/2021/02/18/%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%9F/Blog\source\_posts\什么是个人博客？\比心.jpg" alt="❤" style="zoom:67%;"></blockquote>]]></content>
     
     
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;博客最初名为Weblog，由web+blog合成，字面解释为“网络日记”；后来便产生了blog这个词语，音译作“博客”，亦有音译作“部落格”。&lt;/p&gt;</summary>
+&lt;p&gt;博客最初名为Weblog，由web+blog合成，字面解释为“网络日记”；后来便产生了blog这个词语，音译作“博客”，亦有音译作“部落格”。&lt;/p&gt;&lt;/blockquote&gt;</summary>
     
     
     
